@@ -1,0 +1,150 @@
+{
+  "users": [
+    {
+      "username": "anand",
+      "userMobile": "9910094399",
+      "userRole": "patient",
+      "userEmail": "anand.k@hcl.com",
+      "userPassword": "TpRwZCDx",
+      "id": 1
+    },
+    {
+      "username": "anandkr",
+      "userMobile": "9910095678",
+      "userRole": "doctor",
+      "userEmail": "anand.kmr@dbs.com",
+      "userPassword": "TpRwZCgy",
+      "id": 2
+    },
+    {
+      "username": "anandkrs",
+      "userMobile": "9910094399",
+      "userRole": "patient",
+      "userEmail": "anand.k@hcl.com",
+      "userPassword": "yzX4iEvR",
+      "id": 3
+    }
+  ],
+  "timeslots": [
+    {
+      "doctorName": "anandkr",
+      "doctorId": "2",
+      "speciality": "Cardiologist",
+      "id": 1,
+      "slots": [
+        {
+          "time": "10-11 AM"
+        },
+        {
+          "time": "11-12 AM"
+        },
+        {
+          "time": "2-3 PM"
+        },
+        {
+          "time": "3-4 PM"
+        }
+      ]
+    },
+    {
+      "doctorName": "kumar anand",
+      "doctorId": "3",
+      "speciality": "Ophthalmologist",
+      "id": 2,
+      "slots": [
+        {
+          "time": "9-10 AM"
+        },
+        {
+          "time": "2-3 PM"
+        }
+      ]
+    },
+    {
+      "doctorName": "abc",
+      "doctorId": "4",
+      "speciality": "Dermatologist",
+      "id": 3,
+      "slots": [
+        {
+          "time": "9-10 AM"
+        },
+        {
+          "time": "10-11 AM"
+        },
+        {
+          "time": "11-12 PM"
+        },
+        {
+          "time": "2-3 PM"
+        },
+        {
+          "time": "3-4 PM"
+        }
+      ]
+    },
+    {
+      "doctorName": "anandm",
+      "doctorId": "5",
+      "speciality": "Neurologist",
+      "id": 4,
+      "slots": [
+        {
+          "time": "4-5 PM"
+        },
+        {
+          "time": "5-6 PM"
+        }
+      ]
+    }
+  ],
+  "appointments": [
+    {
+      "doctorId": "2",
+      "doctorName": "anandkr",
+      "patientId": "1",
+      "patientPhone": "9910094399",
+      "timing": "1-2 PM",
+      "problem": "Headache",
+      "patientName": "anand",
+      "id": 1
+    },
+    {
+      "doctorId": "2",
+      "doctorName": "anandkr",
+      "patientId": "1",
+      "patientPhone": "9910094399",
+      "timing": "2-3 PM",
+      "problem": "stomach Pain",
+      "patientName": "anand",
+      "id": 2
+    },
+    {
+      "doctorName": "anandm",
+      "patientId": "1",
+      "patientPhone": "9910094399",
+      "timing": "11-12 AM",
+      "problem": "cough",
+      "patientName": "anand",
+      "id": 3
+    },
+    {
+      "doctorName": "sumitderm",
+      "patientId": "1",
+      "patientPhone": "9910094399",
+      "timing": "4-5 PM",
+      "problem": "test",
+      "patientName": "sumit",
+      "id": 4
+    },
+    {
+      "doctorName": "sumitderm",
+      "patientId": "3",
+      "patientPhone": "9910094399",
+      "timing": "4-5 PM",
+      "problem": "head ache",
+      "patientName": "sumitkrs",
+      "id": 5
+    }
+  ]
+}

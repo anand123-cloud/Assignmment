@@ -1,0 +1,130 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+section{
+    padding: 100px;
+}
+
+h1 {
+  float: right;
+  margin-right: 650px;
+  text-transform: capitalize;
+  color: black;
+ 
+}
+
+input[type=text], input[type=number] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+#submitadd {
+  background-color:cornflowerblue;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.actionitem {
+  background-color:cornflowerblue;
+  color: white;
+  padding: 2px 2px;
+  margin: 2px 0;
+  margin-right: 2px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+
+header{
+    background-image: linear-gradient(cornflowerblue,white);
+    padding: 10px 10px;
+    border-bottom-style: solid;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+#submit {
+  background-color:cornflowerblue;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 29%;
+  opacity: 0.9;
+}
+
+header button {
+  background-color: blue;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  text-transform: capitalize;
+  margin-right: 10px;
+}
+
+header button:hover{
+    background-color: cornflowerblue;
+}
+
+tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+thead {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: cornflowerblue;
+  color: white;
+}
+
+.actionitem {
+  background-color:cornflowerblue;
+  color: white;
+  padding: 2px 2px;
+  margin: 2px 0;
+  margin-right: 2px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+#loggedInUserLabel{
+    margin-top: 0px;
+    margin-left: 700px;
+}

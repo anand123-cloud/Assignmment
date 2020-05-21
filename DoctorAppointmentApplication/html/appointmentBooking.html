@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Booking Appointment</title>
+        <link rel="stylesheet" href="../css/appointmentBooking.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Doctor appointment booking</h1>
+        </header>
+        <section>
+            <form onsubmit="bookAppointment()">
+            
+            <div class="container">
+                <label><b>Doctor Name :</b></label>
+                <input type="text"  id="doctorName" >
+                <label><b>Patient Id :</b></label>
+                <input type="text"  id="patientId" >
+                <label><b>Patient Name :</b></label>
+                <input type="text"  id="patientName" >
+                <label><b>Patient Phone :</b></label>
+                <input type="text"  id="patientPhone" >
+                <label><b>Timing :</b></label>
+                <input type="text"  id="timing" >
+                <label><b>Problem</b></label>
+                <input type="text" placeholder="Enter problem" id="problem" required>
+        
+                <button type="submit" id="submit">Book Appointment</button>
+            </div>
+
+        </form>
+        </section>
+        <script type="text/javascript" src="../js/appointmentBooking.js"></script>
+    </body>
+</html>

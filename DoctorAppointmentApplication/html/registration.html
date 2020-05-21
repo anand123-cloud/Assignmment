@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Registration</title>
+        <link rel="stylesheet" href="../css/registration.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Doctor appointment Application</h1>
+            <button id="company" onclick="loadRegisterForm()">Register</button>
+        </header>
+        <section>
+            <form onsubmit="registeraction()">
+
+            <div class="container">
+                <label><b>User Name</b></label>
+                <input type="text" placeholder="Enter Username" id="userName" pattern="[A-Za-z ]+" required>
+                <label><b>Email</b></label>
+                <input type="email" placeholder="Enter Email" id="userEmail" pattern="[A-Za-z0-9._%+-]*(@dbs.com|@hcl.com)" required>
+                <label><b>Phone Number</b></label>
+                <input type="text" placeholder="Enter Phone Number" id="userPhone" minlength="10" maxlength="10" required>
+                <label><b>Role</b></label>
+                <select id="role">
+                    <option value="">--select--</option>
+                    <option value="doctor">Doctor</option>
+                    <option value="patient">Patient</option>
+                </select>
+        
+                <button type="submit" id="submit">Register</button>
+                <button type="submit" id="submit" onclick="backtoLogin()"> Login Page</button>
+            </div>
+
+        </form>
+        </section>
+        <script type="text/javascript" src="../js/registration.js"></script>
+        <script type="text/javascript" src="../js/generatePassword.js"></script>
+    </body>
+</html>
