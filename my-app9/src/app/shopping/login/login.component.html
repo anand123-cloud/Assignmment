@@ -1,0 +1,22 @@
+<h1>Login Form</h1>
+
+    <div class="container">
+        <form (ngSubmit)="submitLoginForm()" [formGroup]="loginForm">  
+        <label><b>User Name</b></label>
+        <div *ngIf="isSubmitted && loginForm.controls.userName.errors" class="invalid-field">
+            <p *ngIf="loginForm.controls.userName.errors.required">UserName is required</p>
+            <p *ngIf="loginForm.controls.userName.errors.pattern">Email must belong to hcl or dbs domain</p>
+        </div>
+        <input type="text" placeholder="Enter Username" name="userName" formControlName="userName">
+
+        <label><b>Password</b></label>
+        <div *ngIf="isSubmitted && loginForm.controls.password.errors" class="invalid-field">
+            <p *ngIf="loginForm.controls.password.errors.required">Password is required</p>
+            <p *ngIf="loginForm.controls.password.errors.minlength">Password must contains one upper case, one lower case, one special character and atleast 8 characters.</p>
+        </div>
+        <input type="password" placeholder="Enter Password" name="password" formControlName="password">
+
+        <button type="submit">Login</button>
+        </form>
+    </div>
+

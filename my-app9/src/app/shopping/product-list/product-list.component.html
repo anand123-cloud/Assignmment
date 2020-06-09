@@ -1,0 +1,79 @@
+<!-- <app-header></app-header> -->
+<h1>Product List</h1>
+<table id="pets">
+    <tr>
+      <th>Product Id</th>
+      <th>Product Name</th>
+      <th>Price</th>
+      <th>Description</th>
+      <th>Ratings</th>
+      <th>Add to cart</th>
+    </tr>
+    <tr  *ngFor="let product of products; trackBy:trackByProductId">
+       <td>{{product.id}}</td>
+       <td>{{product.productName}}</td>
+       <td>{{product.price}}</td>
+       <td>{{product.description}}</td>
+       <td>{{product.ratings}}</td>
+       <td><button (click)="addToCart(product)">Add to cart</button>
+    </tr>
+</table>
+<hr/>
+<ng-container *ngIf="selectedProduct">
+  <h1>Selected Product: </h1>
+  <div class="container">
+    <form (ngSubmit)="submitAddToCart()" [formGroup]="addCartForm">
+    <div class="row">
+      <div class="col-25">
+        <label for="productId">Product Id:</label>
+      </div>
+      <div class="col-75">
+        <input type="text" name="productId" value={{selectedProduct.id}} formControlName="productId" readonly>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="productName">Product Name:</label>
+      </div>
+      <div class="col-75">
+        <input type="text" name="productName" value={{selectedProduct.productName}} formControlName="productName" readonly>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="price">Product Price:</label>
+      </div>
+      <div class="col-75">
+        <input type="text" name="price" value={{selectedProduct.price}} formControlName="price" readonly>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="productDesc">Product Description:</label>
+      </div>
+      <div class="col-75">
+        <input type="text" name="productDesc" value={{selectedProduct.description}} formControlName="productDesc" readonly>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="quantity">Quantity:</label>
+      </div>
+      <div class="col-75">
+        <input type="text" name="quantity" formControlName="quantity">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="ratings">Ratings:</label>
+      </div>
+      <div class="col-75">
+        <input type="text" name="ratings" formControlName="ratings" readonly>
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" value="Add to cart">
+    </div>
+    </form>
+  </div>
+  </ng-container>

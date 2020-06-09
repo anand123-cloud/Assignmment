@@ -1,0 +1,45 @@
+<!-- <app-header></app-header> -->
+<h1>Your Past Orders </h1>
+<table id="orders">
+    <tr>
+      <th>Order Id</th>
+      <th>Order Date</th>
+      <th>Order Price</th>
+      <th>Address</th>
+      <th>View Order Items</th>
+    </tr>
+    <tr  *ngFor="let order of orders; trackBy:trackByOrderId">
+       <td>{{order.id}}</td>
+       <td>{{order.orderDate}}</td>
+       <td>{{order.orderPrice}}</td>
+       <td>{{order.address}}</td>
+       <td><button (click)="viewOrderDetails(order)">Order Details</button>
+    </tr>
+</table>
+<hr/>
+
+<h1>Order Details:</h1>
+<ng-container *ngIf="orderItems; else elseTemplate">
+<table id="ordersId">
+    <tr>
+      <th>Product Id</th>
+      <th>Product Name</th>
+      <th>Description</th>
+      <th>Quantity</th>
+      <th>Price</th>
+      <th>Total cart price</th>
+    </tr>
+    <tr *ngFor="let orderItem of orderItems; trackBy:trackByOrderId">
+       <td>{{orderItem.productId}}</td>
+       <td>{{orderItem.productName}}</td>
+       <td>{{orderItem.productDesc}}</td>
+       <td>{{orderItem.quantity}}</td>
+       <td>{{orderItem.price}}</td>
+       <td>{{orderItem.totalCartPrice}}</td>
+    </tr>
+</table>
+</ng-container>
+<ng-template #elseTemplate>
+  <p>No Orders Selected</p>
+</ng-template>
+

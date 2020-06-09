@@ -1,0 +1,18 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./out-tsc/app",
+    "types": []
+  },
+  "files": [
+    "src/main.ts",
+    "src/polyfills.ts"
+    //"src/app/shopping/header/header.component.ts"
+  ],
+  "include": [
+    "src/**/*.d.ts"
+   //"C:/Users/Anand/my-app9/src/app/shopping/**/*.*.ts"
+   //"C:/Users/Anand/my-app9/src/app/shopping/header/header.component.ts"
+
+  ]
+}

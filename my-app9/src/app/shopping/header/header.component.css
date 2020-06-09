@@ -1,0 +1,30 @@
+ul{
+    padding: 15px;
+    background-color:brown;
+}
+ul li{
+    display: inline;
+    background-color: brown;
+    padding: 10px;
+    margin: 15px;
+    
+}
+ul li:hover{
+    background-color: #2f70e9;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+input[type=text] {
+    width: 40%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    /*background-image: url('searchicon.png');*/
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+  }

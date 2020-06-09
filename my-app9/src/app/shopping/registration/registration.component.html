@@ -1,0 +1,91 @@
+<h1>Registration-Form</h1>
+<div class="container">
+    <form (ngSubmit)="submitRegistrationForm()" [formGroup]="registrationForm">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">First Name:</label>
+      </div>
+      <div class="col-75">
+        <input type="text" name="firstName" placeholder="Enter first name" formControlName="firstName">
+      </div>
+      <div *ngIf="isSubmitted && registrationForm.controls.firstName.errors" class="invalid-field">
+        <p *ngIf="registrationForm.controls.firstName.errors.required">First Name is required</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Last Name:</label>
+      </div>
+      <div class="col-75">
+        <input type="text" name="lastName" placeholder="Enter Last name" formControlName="lastName">
+      </div>
+      <div *ngIf="isSubmitted && registrationForm.controls.lastName.errors" class="invalid-field">
+        <p *ngIf="registrationForm.controls.lastName.errors.required">Last Name is required</p>
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-25">
+          <label for="email">Email:</label>
+        </div>
+        <div class="col-75">
+          <input type="email" name="email" placeholder="Enter email Id" formControlName="email">
+        </div>
+        <div *ngIf="isSubmitted && registrationForm.controls.email.errors" class="invalid-field">
+          <p *ngIf="registrationForm.controls.email.errors.required">Email Id is required</p>
+          <p *ngIf="registrationForm.controls.email.errors.pattern">Email must belong to hcl or dbs domain</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-25">
+          <label for="mobile">Mobile Number:</label>
+        </div>
+        <div class="col-75">
+          <input type="text" name="mobile" placeholder="Enter Mobile No" formControlName="mobile">
+        </div>
+        <div *ngIf="isSubmitted && registrationForm.controls.mobile.errors" class="invalid-field">
+          <p *ngIf="registrationForm.controls.mobile.errors.required">Mobile no. is required</p>
+          
+        </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="mobile">Password:</label>
+      </div>
+      <div class="col-75">
+        <input type="text" name="userPassword" placeholder="Enter password" formControlName="userPassword">
+      </div>
+      <div *ngIf="isSubmitted && registrationForm.controls.userPassword.errors" class="invalid-field">
+        <p *ngIf="registrationForm.controls.userPassword.errors.required">Password is required</p>
+        
+      </div>
+  </div>
+    <div class="row">
+        <div class="col-25">
+          <label for="address">Address:</label>
+        </div>
+        <div class="col-75">
+          <textarea name="address" placeholder="Enter Address.." style="height:200px" formControlName="address"></textarea>
+        </div>
+        <div *ngIf="isSubmitted && registrationForm.controls.address.errors" class="invalid-field">
+          <p *ngIf="registrationForm.controls.address.errors.required">Address is required</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-25">
+          <label for="gender">Gender:</label>
+        </div>
+        <div class="col-75">
+                Male <input type="radio" name="gender" value="male" formControlName="gender" >
+                Female<input type="radio" name="gender" value="female" formControlName="gender" >
+                Other<input type="radio" name="gender" value="other" formControlName="gender" >
+        </div>
+        <div *ngIf="isSubmitted && registrationForm.controls.gender.errors" class="invalid-field">
+          <p *ngIf="registrationForm.controls.gender.errors.required">Gender is required</p>
+        </div>
+    </div>
+    
+    <div class="row">
+      <input type="submit" value="Register">
+    </div>
+    </form>
+  </div>

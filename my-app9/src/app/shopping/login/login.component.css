@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+section{
+    padding: 100px 100px;
+}
+.container{
+    padding: 100px;
+}
+
+header{
+    background-image: linear-gradient(cornflowerblue,white);
+    padding: 10px 10px;
+    border-bottom-style: solid;
+    display: flex;
+    justify-content: flex-end;
+
+}
+h1 {
+  float: right;
+  margin-right: 700px;
+  text-transform: capitalize;
+  color: black;
+ 
+}
+h3 {
+  float: right;
+  margin-right: 700px;
+  text-transform: capitalize;
+  color: black;
+ 
+}
+header button {
+  background-color: blue;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  text-transform: capitalize;
+  margin-right: 10px;
+}
+
+header button:hover{
+    background-color: cornflowerblue;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* form {
+  border: 3px solid #f1f1f1; 
+} */
+
+input[type=text], input[type=password],select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+form button {
+  background-color: brown;
+  color: white;
+  padding: 14px 20px;
+  /* margin: 8px 0; */
+  margin-right: 30%;
+  margin-left: 30%;
+  border: none;
+  cursor: pointer;
+  width: 40%;
+  align-self: center;
+}
+
+#submit:hover {
+  opacity: 0.8;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+.invalid-field{
+  color: red;
+}

@@ -1,0 +1,28 @@
+<nav>
+    <ul>
+        <!-- <span>
+            <li><a routerLink="/products">Home</a></li>
+        </span>
+        <span *ngIf='!isUserLoggedIn'>
+            <li><a  routerLink="/login">Login</a></li>
+        </span>
+        <span *ngIf='!isUserLoggedIn'>
+            <li><a  routerLink="/registration">Register</a></li>
+        </span>
+        <span *ngIf='isUserLoggedIn'>
+            <li><a  routerLink="/myCart">MyCart</a></li>
+        </span>
+        <span *ngIf='isUserLoggedIn'>
+            <li><a  routerLink="/orders">Orders</a></li>
+        </span>
+        <span *ngIf='isUserLoggedIn'>
+            <li><a  routerLink="/login" (click)="logout()">Logout</a></li>
+        </span> -->
+        <li><a routerLink="/products">Home</a></li>
+        <li><a *ngIf='!isUserLoggedIn' routerLink="/login">Login</a></li>
+        <li><a *ngIf='!isUserLoggedIn' routerLink="/registration">Register</a></li>
+        <li><a *ngIf='isUserLoggedIn' routerLink="/myCart">MyCart</a></li>
+        <li><a *ngIf='isUserLoggedIn' routerLink="/orders">Orders</a></li>
+        <li><a *ngIf='isUserLoggedIn' routerLink="/login" (click)="logout()">Logout</a></li>
+    </ul>
+</nav>
